@@ -81,10 +81,10 @@ Define ```score[][]``` as follows.
 
 ```C
   score[i][j] =
-    heuristic(board[1][j] ~ East) +
-    heuristic(board[1][j] ~ SouthEast) +
-    heuristic(board[1][j] ~ South) +
-    heuristic(board[1][j] ~ SouthWest)
+    heuristic(board[i][j] ~ East) +
+    heuristic(board[i][j] ~ SouthEast) +
+    heuristic(board[i][j] ~ South) +
+    heuristic(board[i][j] ~ SouthWest)
 ```
 
 For each move, only 17 cell updates are necessary, as opposed to updating the score of the entire board.
