@@ -22,14 +22,16 @@ Gomoku is a game where players fight to put 5 stones in a row.
 ---
 
 
-X | X |   | X | X
+A | B | C | D | E
 --- | ---| --- | --- | ---
+X | X |   | X | X
 
 This is an 80% complete, possible winning "window".
 
 
-O | X |   | X | X
+A | B | C | D | E
 --- | ---| --- | --- | ---
+X | O |   | X | X
 
 This is a 60% complete, impossible winning "window".
 
