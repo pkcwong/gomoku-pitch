@@ -92,3 +92,13 @@ Define ```score[][]``` as follows.
 ```
 
 For each move, only 17 cell updates are necessary, as opposed to updating the score of the entire board.
+
+---
+
+## Min-Max and Alpha-Beta Pruning
+
+Min-Max is implemented up to 3 ply for 8x8 board, 2 ply for 13x13 onwards.
+
+## Search Space
+
+The entire board is searched for legal moves.
