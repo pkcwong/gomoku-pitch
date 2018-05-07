@@ -52,3 +52,39 @@ completeness | score (gote~sente)
 ---
 
 ## Implementation
+
+The trivial way of defining a board would be using ```char[][]```, updating the cells as the game progress.
+
+```C
+  Engine::Engine(int size) : BOARD_SIZE(size) {
+  	this->board = new char* [size];
+  	for (int i = 0; i != size; i++) {
+  		this->board[i] = new char[size];
+  		for (int j = 0; j != size; j++) {
+  			this->board[i][j] = ' ';
+  		}
+  	}
+  }
+```
+
+---
+
+## Computing the Heuristic Score
+
+- Each stone only "affects" a 5 by 5 area.
+- More precisely, only a range of 5 in 8 directions.
+- A 2D array is used to store scores at different cells.
+
+---
+
+Define ```score[][]``` as follows.
+
+```C
+  score[i][j] =
+    heuristic(board[1][j] ~ East) +
+    heuristic(board[1][j] ~ SouthEast) +
+    heuristic(board[1][j] ~ South) +
+    heuristic(board[1][j] ~ SouthWest)
+```
+
+For each move, only 17 cell updates are necessary, as opposed to updating the score of the entire board.
