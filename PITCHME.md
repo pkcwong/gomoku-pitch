@@ -2,6 +2,10 @@
 
 An overly simplified approach.
 
+<div style="float: right">
+  Christopher Wong
+</div>
+
 ---
 
 ## The Game
