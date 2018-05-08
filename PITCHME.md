@@ -102,3 +102,13 @@ Min-Max is implemented up to 3 ply for 8x8 board, 2 ply for 13x13 onwards.
 ## Search Space
 
 The entire board is searched for legal moves.
+
+---
+
+## Playing a Long game
+
+2 simple rules
+- if skipping a turn yields a positive heuristic score
+- if the game is losing
+
+> Play the worst possible move.
